@@ -1,0 +1,56 @@
+{
+    "name": "@repas/web",
+    "version": "0.0.1",
+    "description": "",
+    "keywords": [
+        "javascript"
+    ],
+    "homepage": "https://github.com/folkloreinc/repas",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/folkloreinc/repas.git"
+    },
+    "author": {
+        "name": "Folklore",
+        "email": "info@folklore.email"
+    },
+    "contributors": [
+        {
+            "name": "David Mongeau-Petitpas",
+            "email": "dmp@folklore.email"
+        },
+        {
+            "name": "Nicolas Roy-Bourdages",
+            "email": "nrb@folklore.email"
+        },
+        {
+            "name": "Julien Carignan",
+            "email": "jc@folklore.email"
+        }
+    ],
+    "license": "ISC",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "prepare": "../../node_modules/.bin/webpack --mode=production --config webpack.config.js",
+        "start": "../../node_modules/.bin/webpack serve --mode=development --open --hot  --config webpack.config.js"
+    },
+    "devDependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    },
+    "peerDependencies": {
+        "react": "^16.8.0 || ^17.0.0",
+        "react-dom": "^16.8.0 || ^17.0.0"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.15.4",
+        "bootstrap": "^5.1.3",
+        "prop-types": "^15.7.2"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "gitHead": "be1b74278020f1b8b4ea2ade87ffb6d1b8d4fa95"
+}

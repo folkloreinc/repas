@@ -1,0 +1,49 @@
+{
+    "name": "@repas/server",
+    "version": "0.0.1",
+    "description": "",
+    "keywords": [
+        "javascript"
+    ],
+    "homepage": "https://github.com/folkloreinc/repas",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/folkloreinc/repas.git"
+    },
+    "author": {
+        "name": "Folklore",
+        "email": "info@folklore.email"
+    },
+    "contributors": [
+        {
+            "name": "David Mongeau-Petitpas",
+            "email": "dmp@folklore.email"
+        },
+        {
+            "name": "Nicolas Roy-Bourdages",
+            "email": "nrb@folklore.email"
+        },
+        {
+            "name": "Julien Carignan",
+            "email": "jc@folklore.email"
+        }
+    ],
+    "license": "ISC",
+    "files": [
+        "es",
+        "lib"
+    ],
+    "main": "lib/index.js",
+    "module": "es/index.js",
+    "scripts": {
+        "prepare": "NODE_ENV=production ../../node_modules/.bin/rollup --config ../../rollup.config.js"
+    },
+    "dependencies": {
+        "@babel/runtime": "^7.15.4",
+        "commander": "^8.2.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "gitHead": "be1b74278020f1b8b4ea2ade87ffb6d1b8d4fa95"
+}

@@ -1,0 +1,17 @@
+{
+    "packages": [
+        "packages/*"
+    ],
+    "command": {
+        "publish": {
+            "allowBranch": [
+                "master",
+                "develop"
+            ]
+        },
+        "bootstrap": {
+            "hoist": true
+        }
+    },
+    "version": "0.0.0"
+}
